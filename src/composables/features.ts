@@ -26,7 +26,7 @@ export const defineFeaturesConfig = (defined: () => IFeatureRepository) => {
  * @param items {@link IFeatureRepository} Array of Feature items to be used in the Feature.
  * @returns {typeof FeatureService.prototype} An instance of Feature.
  */
-export const useFeature = (items: IFeatureRepository): typeof FeatureService.prototype => {
+export const useFeatures = (items: IFeatureRepository): typeof FeatureService.prototype => {
     const repository = new FeatureRepository(items);
     return new FeatureService(repository);
 };
