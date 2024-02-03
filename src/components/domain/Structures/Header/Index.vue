@@ -10,7 +10,7 @@
                     </div>
                     <div class="px-6">
                         <ul class="grid gap-4 pt-24">
-                            <NuxtLink @click.capture="isMenuOpen = !isMenuOpen" v-for="(item, i) in menu.get()" :key="i" v-bind="item.getBinding()">
+                            <NuxtLink v-for="(item, i) in menu.get()" :key="i" v-bind="item.getBinding()" @click.capture="isMenuOpen = !isMenuOpen">
                                 <li class="rounded-full px-3 py-1 font-title text-4xl text-primary before:hidden hover:bg-orange-100">
                                     {{ item.content }}
                                 </li>
