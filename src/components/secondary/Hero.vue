@@ -21,8 +21,10 @@
                 </div>
             </div>
         </div>
-        <div class="relative grid justify-center">
-            <NuxtImg class="w-full" sizes="xs:600px sm:600px lg:690px" src="/home/vyctor.png" />
+        <div class="relative grid">
+            <div class="aspect-[583/1027] h-full w-auto">
+                <NuxtImg class="min-w-full" placeholder sizes="xs:600px sm:600px lg:690px" src="/home/vyctor.png" />
+            </div>
             <div class="absolute inset-0 -z-10">
                 <svg class="overflow-visible" viewBox="0 0 750 811" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="405.5" cy="405.5" r="405.5" fill="#6EA8FF" fill-opacity="0.1" />

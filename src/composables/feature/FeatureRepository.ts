@@ -6,7 +6,7 @@ export default class FeatureRepository {
 
   constructor(setup: IFeatureRepository) {
     if (!FeatureRepositorySchema.safeParse(setup).success) {
-      throw new Error("Wrong Type on FeatureRepository");
+      console.warn("Error on loading FeatureRepositorySchema")
     }
     setup.forEach((item: IFeature) =>
       this.Repository.push(new FeatureController(item))

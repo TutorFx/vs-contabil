@@ -1,6 +1,6 @@
 import type FeatureRepository from "./FeatureRepository";
 
-export default class MenuService {
+export default class FeatureService {
   FeatureRepository: FeatureRepository
 
   constructor(FeatureRepository: FeatureRepository){

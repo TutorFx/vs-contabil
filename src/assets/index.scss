@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --swiper-pagination-bottom: -40px;
+    --swiper-pagination-top: auto;
+    --swiper-pagination-color: #094B72;
+}
+
 * {
     min-width: 0;
 }

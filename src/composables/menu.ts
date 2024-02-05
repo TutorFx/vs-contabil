@@ -1,6 +1,9 @@
 import { z } from "zod";
 import MenuService from "./menu/MenuService";
 import MenuRepository from "./menu/MenuRepository";
+import type { ITestimonialRepository } from "./testimonial";
+import TestimonialRepository from "./testimonial/TestimonialRepository";
+import TestimonialService from "./testimonial/TestimonialService";
 
 export enum LinkType {
   ExternalLink,
@@ -53,6 +56,16 @@ export const defineMenuConfig = (defined: () => IMenuRepository): IMenuRepositor
 export const useMenu = (items: IMenuRepository): typeof MenuService.prototype => {
   const repository = new MenuRepository(items);
   return new MenuService(repository);
+};
+
+/**
+ * Creates a new instance of TestimonialService with provided testimonials.
+ * @param items {@link ITestimonialRepository} Repository of testimonials to be used.
+ * @returns {typeof TestimonialService.prototype} An instance of TestimonialService.
+ */
+export const useTestimonials = (items: ITestimonialRepository): typeof TestimonialService.prototype => {
+  const repository = new TestimonialRepository(items);
+  return new TestimonialService(repository);
 };
 
 export default defineMenuConfig;
