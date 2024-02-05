@@ -4,5 +4,6 @@
         <SecondaryServices />
         <SecondaryCountings />
         <SecondaryTestimonials />
+        <SecondaryLpForm />
     </div>
 </template>
