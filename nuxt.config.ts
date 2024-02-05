@@ -33,6 +33,10 @@ export default defineNuxtConfig({
     }
   },
 
+  routeRules: {
+    "/": { isr: true },
+  },
+
   devtools: { enabled: true },
 
   srcDir: 'src/',
