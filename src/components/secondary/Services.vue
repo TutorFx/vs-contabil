@@ -15,7 +15,7 @@
                 <div class="grid max-w-xl gap-12 px-6 md:grid-cols-2 md:px-0 lg:col-span-8 lg:mx-auto lg:gap-6">
                     <div v-for="(feature, i) in features.get()" :key="i" class="grid aspect-square rounded-lg bg-primary-content p-8">
                         <div class="size-16">
-                            <NuxtImg :size="64" class="w-[64px]" :src="feature.path" />
+                            <NuxtImg :alt="`ícone ${feature.title} (${feature.path})`" :size="64" class="w-[64px]" :src="feature.path" />
                         </div>
                         <h5 class="font-title text-xl">
                             {{ feature.title }}

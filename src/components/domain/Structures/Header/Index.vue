@@ -25,7 +25,7 @@
         <DomainGenericsContainer>
             <div class="grid grid-flow-col grid-cols-[max-content_1fr] items-center px-6">
                 <NuxtLink to="/">
-                    <NuxtImg width="200px" height="auto" src="/brand/logo.png" />
+                    <NuxtImg alt="Logotipo da VS Contábil" width="200px" height="auto" src="/brand/logo.png" />
                 </NuxtLink>
                 <div class="grid grid-flow-col justify-end gap-4 px-6">
                     <button v-if="!isMenuOpen" class="md:hidden" @click="isMenuOpen = !isMenuOpen">

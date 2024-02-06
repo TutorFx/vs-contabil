@@ -2,7 +2,7 @@
     <span>
         <div class="grid grid-flow-col items-center justify-start gap-3">
             <div class="size-16 max-h-16 max-w-16 overflow-hidden rounded-full bg-primary-content">
-                <NuxtImg sizes="xs:64px sm:64px md:64px lg:64px" :src="user.image" />
+                <NuxtImg :alt="`Foto de ${user.name}, que é ${user.role} na ${user.org}`" sizes="xs:64px sm:64px md:64px lg:64px" :src="user.image" />
             </div>
             <div>
                 <b>{{ user.name }}</b>
