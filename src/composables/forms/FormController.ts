@@ -6,7 +6,8 @@ export default class FormController {
 
   private status = reactive({
     touched: false,
-    pending: false
+    pending: false,
+    success: false,
   })
 
   private store = reactive<ISchema["form"]>({
@@ -27,6 +28,7 @@ export default class FormController {
         method: "POST",
         body: this.store
       });
+      this.status.success = true
     } catch (e) {
       if (e instanceof ZodError) {
         console.error('Invalid Form Data')

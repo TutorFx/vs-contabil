@@ -19,11 +19,12 @@
                 <div>
                     <div class="mx-auto max-w-lg rounded-xl bg-stone-100 p-6 lg:p-12">
                         <div class="block rounded-lg p-4 lg:p-12">
-                            <form @submit.prevent="form.send()" class="grid gap-3">
+                            <form v-if="!success" class="grid gap-3" @submit.prevent="form.send()">
                                 <DomainFormInput id="nome" v-model="name" label="Nome" placeholder="José Faria" />
                                 <DomainFormError v-if="touched" :error="error.name" />
 
-                                <DomainFormInput id="phone" v-model="phone" v-maska
+                                <DomainFormInput
+                                    id="phone" v-model="phone" v-maska
                                     data-maska="['(##) ####-####', '(##) # ####-####']" placeholder="(##) # ####-####"
                                     label="Número de WhatsApp" />
                                 <DomainFormError v-if="touched" :error="error.phone" />
@@ -31,7 +32,8 @@
                                 <DomainFormInput id="email" v-model="email" label="Email" placeholder="exemplo@gmail.com" />
                                 <DomainFormError v-if="touched" :error="error.email" />
 
-                                <DomainFormTextarea id="message" v-model="message" label="Mensagem"
+                                <DomainFormTextarea
+                                    id="message" v-model="message" label="Mensagem"
                                     placeholder="Como eu abro uma empresa?" />
                                 <DomainFormError v-if="touched" :error="error.message" />
                                 <div class="px-6 text-sm">
@@ -41,6 +43,17 @@
                                     Enviar
                                 </DomainGenericsButton>
                             </form>
+                            <div v-else class="grid aspect-square items-center">
+                                <div class="grid gap-6 py-12 text-center">
+                                    <h3 class="font-title text-2xl">
+                                        Recebemos sua mensagem! 
+                                    </h3>
+                                    <p class="text-xl">
+                                        Entraremos em contato <br>
+                                        muito em breve
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -63,7 +76,7 @@ const form = useForm();
 
 // Form 
 const { name, phone, email, message } = form.getState()
-const { pending, touched } = form.getStatus()
+const { pending, touched, success } = form.getStatus()
 const error = form.getValidation()
 
 </script>
