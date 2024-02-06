@@ -14,7 +14,7 @@
                         Fiscal e Contábil.
                     </p>
                     <div class="py-3">
-                        <DomainGenericsButton to="#FORM" size="lg">
+                        <DomainGenericsButton to="#CONTATO" size="lg">
                             Fale com um especialista
                         </DomainGenericsButton>
                     </div>
