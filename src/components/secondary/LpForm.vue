@@ -19,7 +19,7 @@
                 <div>
                     <div class="mx-auto max-w-lg rounded-xl bg-stone-100 p-6 lg:p-12">
                         <div class="block rounded-lg p-4 lg:p-12">
-                            <div class="grid gap-3">
+                            <form @submit.prevent="form.send()" class="grid gap-3">
                                 <DomainFormInput id="nome" v-model="name" label="Nome" placeholder="José Faria" />
                                 <DomainFormError v-if="touched" :error="error.name" />
 
@@ -37,10 +37,10 @@
                                 <div class="px-6 text-sm">
                                     Sua dúvida pode conter até 4000 caracteres.
                                 </div>
-                                <DomainGenericsButton :loading="pending" @click="form.send()">
+                                <DomainGenericsButton :loading="pending" type="submit">
                                     Enviar
                                 </DomainGenericsButton>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>

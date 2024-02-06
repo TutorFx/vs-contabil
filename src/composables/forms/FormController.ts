@@ -16,14 +16,17 @@ export default class FormController {
     message: "" 
   });
 
-  send(){
+  async send(){
     try {
       this.status.touched = true;
       this.status.pending = true;
       // Validate Field
-      Schema.form.parse(this.state().value)
+      Schema.form.parse(this.store)
       // Send Request
-
+      await $fetch("/api/v1/handleform", {
+        method: "POST",
+        body: this.store
+      });
     } catch (e) {
       if (e instanceof ZodError) {
         console.error('Invalid Form Data')
