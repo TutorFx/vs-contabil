@@ -1,5 +1,5 @@
 <template>
-    <div v-for="(e, i) in error.value" :key="i">
+    <div v-for="(e, i) in error.value" :key="i" class="text-red-500">
         {{ e.message }}
     </div>
 </template>

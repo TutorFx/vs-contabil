@@ -77,6 +77,14 @@ export default defineNuxtConfig({
     }
   },
 
+  runtimeConfig: {
+    google: {
+      client: process.env.GOOGLE_CLIENT,
+      apiKey: process.env.GOOGLE_API,
+      sheet: process.env.GOOGLE_SHEET_ID,
+    },
+  },
+
   eslint: {
     emitWarning: false
   },
