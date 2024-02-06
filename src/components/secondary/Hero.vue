@@ -6,13 +6,13 @@
                     <DomainGenericsNotification>
                         Entre em contato via WhatsApp
                     </DomainGenericsNotification>
-                    <h2 class="font-title text-6xl text-primary md:text-7xl xl:-mr-40 xl:text-8xl">
+                    <h1 class="font-title text-6xl text-primary md:text-7xl xl:-mr-40 xl:text-8xl">
                         VS Contábil: <br>Êxito Financeiro
-                    </h2>
-                    <p class="max-w-md text-xl">
+                    </h1>
+                    <h2 class="max-w-md text-xl">
                         Simplifique a gestão do seu negócio com nossas soluções integradas em Departamento Pessoal,
                         Fiscal e Contábil.
-                    </p>
+                    </h2>
                     <div class="py-3">
                         <DomainGenericsButton to="#CONTATO" size="lg">
                             Fale com um especialista

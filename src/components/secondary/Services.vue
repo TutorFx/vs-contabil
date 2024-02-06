@@ -17,9 +17,9 @@
                         <div class="size-16">
                             <NuxtImg :alt="`ícone ${feature.title} (${feature.path})`" :size="64" class="w-[64px]" :src="feature.path" />
                         </div>
-                        <h5 class="font-title text-xl">
+                        <h4 class="font-title text-xl">
                             {{ feature.title }}
-                        </h5>
+                        </h4>
                         <p class="text-primary">
                             {{ feature.description }}
                         </p>

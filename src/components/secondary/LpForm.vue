@@ -4,9 +4,9 @@
             <div class="xs:gap-6 grid gap-24 px-6 py-24 lg:grid-cols-2">
                 <div>
                     <div id="CONTATO" class="grid gap-6">
-                        <h2 class="font-title text-4xl">
+                        <h3 class="font-title text-4xl">
                             Dúvidas Complexas?
-                        </h2>
+                        </h3>
                         <div class="text-lg text-stone-700">
                             Agende um horário conosco e vamos juntos transformar esses desafios em oportunidades para o seu
                             negócio. Estamos ansiosos para colaborar com você!
