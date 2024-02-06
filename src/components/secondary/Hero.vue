@@ -15,7 +15,7 @@
                     </p>
                     <div class="py-3">
                         <DomainGenericsButton to="#FORM" size="lg">
-                            FALE COM UM ESPECIALISTA
+                            Fale com um especialista
                         </DomainGenericsButton>
                     </div>
                 </div>
@@ -26,7 +26,7 @@
                 <NuxtImg class="min-w-full" placeholder sizes="xs:600px sm:600px lg:690px" src="/home/vyctor.png" />
             </div>
             <div class="absolute inset-0 -z-10">
-                <svg class="overflow-visible" viewBox="0 0 750 811" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="inline overflow-visible" viewBox="0 0 750 811" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="405.5" cy="405.5" r="405.5" fill="#6EA8FF" fill-opacity="0.1" />
                     <circle cx="384.799" cy="323.101" r="316.607" fill="#6EA8FF" fill-opacity="0.1" />
                 </svg>

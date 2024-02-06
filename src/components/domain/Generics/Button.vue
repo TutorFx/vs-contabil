@@ -59,7 +59,7 @@ const outside = computed(() =>
 
 const inside = computed(() =>
   twMerge(
-    "text-center uppercase inline-block",
+    "text-center inline-block",
     sizes[props.size].inside,
     styles[props.style][props.outlined ? "insideOutlined" : "inside"],
   ),

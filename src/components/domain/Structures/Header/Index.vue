@@ -33,13 +33,13 @@
                     </button>
                 </div>
                 <div class="hidden md:block">
-                    <ul class="grid grid-flow-col justify-end gap-4">
+                    <menu class="grid grid-flow-col justify-end gap-4">
                         <NuxtLink v-for="(item, i) in menu.get()" :key="i" v-bind="item.getBinding()">
-                            <li class="rounded-full px-3 py-1 before:hidden hover:bg-orange-100">
+                            <div class="rounded-full px-3 py-1 hover:bg-orange-100">
                                 {{ item.content }}
-                            </li>
+                            </div>
                         </NuxtLink>
-                    </ul>
+                    </menu>
                 </div>
             </div>
         </DomainGenericsContainer>

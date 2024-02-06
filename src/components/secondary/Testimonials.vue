@@ -12,7 +12,7 @@
                 <template #fallback>
                     <div class="grid justify-center">
                         <div>
-                            <div class="grid grid-cols-2 justify-center gap-6">
+                            <div class="grid justify-center gap-6 md:grid-cols-2">
                                 <div v-for="(item, i) in TestimonialService.get().slice(0, 2)" :key="i">
                                     <DomainGenericsTestimonial :data="item" />
                                 </div>
