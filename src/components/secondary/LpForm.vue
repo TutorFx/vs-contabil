@@ -20,22 +20,24 @@
                     <div class="mx-auto max-w-lg rounded-xl bg-stone-100 p-6 lg:p-12">
                         <div class="block rounded-lg p-4 lg:p-12">
                             <div class="grid gap-3">
-                                <DomainFormInput 
-                                    id="nome" 
-                                    v-model="formdata.nome" 
-                                    label="Nome" 
-                                    placeholder="José Faria" />
-                                <DomainFormInput
-                                    id="phone" v-model="formdata.phone" v-maska
+                                <DomainFormInput id="nome" v-model="name" label="Nome" placeholder="José Faria" />
+                                <DomainFormError v-if="touched" :error="error.name" />
+
+                                <DomainFormInput id="phone" v-model="phone" v-maska
                                     data-maska="['(##) ####-####', '(##) # ####-####']" placeholder="(##) # ####-####"
                                     label="Número de WhatsApp" />
-                                <DomainFormInput
-                                    id="email" v-model="formdata.email" label="Email"
-                                    placeholder="exemplo@gmail.com" />
-                                <DomainFormTextarea
-                                    id="message" v-model="formdata.message" label="Mensagem"
+                                <DomainFormError v-if="touched" :error="error.phone" />
+
+                                <DomainFormInput id="email" v-model="email" label="Email" placeholder="exemplo@gmail.com" />
+                                <DomainFormError v-if="touched" :error="error.email" />
+
+                                <DomainFormTextarea id="message" v-model="message" label="Mensagem"
                                     placeholder="Como eu abro uma empresa?" />
-                                <DomainGenericsButton>
+                                <DomainFormError v-if="touched" :error="error.message" />
+                                <div class="px-6 text-sm">
+                                    Sua dúvida pode conter até 4000 caracteres.
+                                </div>
+                                <DomainGenericsButton :loading="pending" @click="form.send()">
                                     Enviar
                                 </DomainGenericsButton>
                             </div>
@@ -50,7 +52,6 @@
 
 
 <script setup lang="ts">
-
 const owner = {
     name: "Vyctor Soares",
     org: "VS Contábil",
@@ -58,12 +59,13 @@ const owner = {
     image: "/home/profile ceo.png"
 }
 
-const formdata = ref({
-    nome: "",
-    phone: "",
-    email: "",
-    message: ""
-})
+const form = useForm();
+
+// Form 
+const { name, phone, email, message } = form.getState()
+const { pending, touched } = form.getStatus()
+const error = form.getValidation()
+
 </script>
 
 <style scoped>

@@ -6,9 +6,6 @@
             {{ label }}
         </label>
     </div>
-    <div class="px-6 text-sm">
-        Sua dúvida pode conter até 4000 caracteres.
-    </div>
 </template>
   
 <script setup lang="ts">

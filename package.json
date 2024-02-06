@@ -34,6 +34,7 @@
     "jsdoc": "^4.0.2",
     "maska": "^2.1.11",
     "nuxt-speedkit": "^3.0.0-next.45",
+    "ofetch": "^1.3.3",
     "prettier": "^3.2.4",
     "sharp": "^0.33.2",
     "swiper": "^11.0.6",
