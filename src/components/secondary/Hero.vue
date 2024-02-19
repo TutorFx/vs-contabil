@@ -27,8 +27,8 @@
             </div>
             <div class="absolute inset-0 -z-10">
                 <svg class="inline overflow-visible" viewBox="0 0 750 811" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="405.5" cy="405.5" r="405.5" fill="#f0f6ff" />
-                    <circle cx="384.799" cy="323.101" r="316.607" fill="#e3eeff" />
+                    <circle cx="405.5" cy="405.5" r="405.5" class="fill-brand-50" />
+                    <circle cx="384.799" cy="323.101" r="316.607" class="fill-brand-100" />
                 </svg>
             </div>
         </div>

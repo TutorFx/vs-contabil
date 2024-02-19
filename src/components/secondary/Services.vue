@@ -7,7 +7,7 @@
                         <h3 class="font-title text-4xl">
                             Porque nos contratar?
                         </h3>
-                        <div class="text-xl text-gray-700">
+                        <div class="text-xl text-black">
                             Muitas vezes o processo contábil pode ser muito complicado. Descomplicamos para você!
                         </div>
                     </div>

@@ -7,7 +7,7 @@
                         <h3 class="font-title text-4xl">
                             Dúvidas Complexas?
                         </h3>
-                        <div class="text-lg text-stone-700">
+                        <div class="text-lg text-black">
                             Agende um horário conosco e vamos juntos transformar esses desafios em oportunidades para o seu
                             negócio. Estamos ansiosos para colaborar com você!
                         </div>
