@@ -4,7 +4,7 @@
             <div class="text-center text-lg font-black">
                 {{ data.comment.title }}
             </div>
-            <div class="text-center">
+            <div class="text-center text-lg">
                 {{ data.comment.message }}
             </div>
         </div>

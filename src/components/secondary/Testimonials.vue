@@ -1,6 +1,6 @@
 <template>
     <div class="relative overflow-hidden bg-primary-50 py-32">
-        <div class="mx-auto grid max-w-6xl gap-12">
+        <div class="mx-auto grid max-w-7xl gap-12">
             <div class="text-center">
                 <div id="TESTEMUNHO" class="font-title text-4xl">
                     Avaliações de Clientes

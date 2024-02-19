@@ -51,6 +51,7 @@ export default defineNuxtConfig({
     '@nuxtjs/eslint-module',
     '@nuxt/image',
     'nuxt-icon',
+    '@nuxtjs/device'
   ],
 
   image: {
