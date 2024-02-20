@@ -14,6 +14,8 @@ Create performant and production-grade full-stack web apps and websites with con
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
 
+## ✨ Features
+
 #### 🧩 Service Pattern
 
 The service pattern was used to organize the business logic of the application. This pattern helps to keep the code clean and easy to maintain, clearly separating responsibilities.
