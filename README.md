@@ -138,6 +138,40 @@ GOOGLE_API="-----BEGIN PRIVATE KEY-----
 -----END PRIVATE KEY-----"
 ```
 
+## How to enable services in your IAM account
+
+To enable services in your IAM account, you need to follow these steps:
+
+**1. Access the Google Cloud Platform Console:**
+
+* Go to the Google Cloud Platform Console at [https://console.cloud.google.com/](https://console.cloud.google.com/).
+* Sign in to your Google Cloud Platform account.
+
+**2. Open the APIs & Services page:**
+
+* In the left navigation menu, click "APIs & Services".
+* Select "Library".
+
+**3. Locate the services you want to enable:**
+
+* In the search bar, type the name of the service you want to enable. For example, type "Google Sheets" to enable the service "[https://www.googleapis.com/auth/spreadsheets](https://www.googleapis.com/auth/spreadsheets)".
+* Click the name of the service to open the service details page.
+
+**4. Enable the service:**
+
+* On the service details page, click "Enable".
+* If you are prompted to review the service permissions, read them carefully and click "Enable".
+
+**5. Repeat steps 3 and 4 for each service you want to enable:**
+
+* Repeat steps 3 and 4 for each of the services you listed:
+    * "[https://www.googleapis.com/auth/drive.file](https://www.googleapis.com/auth/drive.file)"
+    * "[https://www.googleapis.com/auth/drive](https://www.googleapis.com/auth/drive)"
+
+**6. Verify that the services have been enabled:**
+
+* On the "Library" page, you can verify that the services have been enabled. Enabled services will be displayed with a status of "Enabled".
+
 ## Obtain Google Sheet ID
 
 Now that we have an IAM account configured, the next steps to receive customer data in the spreadsheet are:
