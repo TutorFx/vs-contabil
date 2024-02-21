@@ -83,6 +83,7 @@ export default defineNuxtConfig({
       client: process.env.GOOGLE_CLIENT,
       apiKey: process.env.GOOGLE_API,
       sheet: process.env.GOOGLE_SHEET_ID,
+      sheet_page: "Cadastro", // It will be by default "Page1"
     },
   },
 

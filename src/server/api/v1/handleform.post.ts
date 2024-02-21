@@ -16,7 +16,7 @@ export default defineEventHandler(async (event) => {
     // @ts-expect-error - Types from google are broken :(
     await sheets.spreadsheets.values.append({
       spreadsheetId: config.google.sheet ?? "< Sheets id >",
-      range: "Cadastro!A3",
+      range: `${config.google.sheet_page}!A3`,
       valueInputOption: "USER_ENTERED",
       resource: {
         values: [
