@@ -15,21 +15,6 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'pt-BR'
       },
-      link: [
-        {
-          rel: 'preconnect',
-          href: 'https://fonts.googleapis.com'
-        },
-        {
-          rel: 'preconnect',
-          href: 'https://fonts.gstatic.com',
-          crossorigin: ''
-        },
-        {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Plus+Jakarta+Sans:wght@500&display=swap',
-        }
-      ]
     }
   },
 
@@ -47,6 +32,13 @@ export default defineNuxtConfig({
 
   css: ['@/assets/index.scss'],
 
+  googleFonts: {
+    families: {
+      'Plus+Jakarta+Sans': 500,
+      'Playfair+Display': 500,
+    }
+  },
+
   modules: [
     'nuxt-site-config',
     'nuxt-speedkit',
@@ -55,7 +47,8 @@ export default defineNuxtConfig({
     '@nuxtjs/eslint-module',
     '@nuxt/image',
     'nuxt-icon',
-    '@nuxtjs/device'
+    '@nuxtjs/device',
+    '@nuxtjs/google-fonts'
   ],
 
   image: {

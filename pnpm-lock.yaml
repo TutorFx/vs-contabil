@@ -94,6 +94,9 @@ dependencies:
     version: 3.22.4
 
 devDependencies:
+  '@nuxtjs/google-fonts':
+    specifier: ^3.1.3
+    version: 3.1.3
   '@types/uuid':
     specifier: ^9.0.8
     version: 9.0.8
@@ -2060,6 +2063,17 @@ packages:
       - rollup
       - supports-color
     dev: false
+
+  /@nuxtjs/google-fonts@3.1.3:
+    resolution: {integrity: sha512-gHwstHXQKd/r9O2WnQR4UJbi7Rfb9No1/gF4gqP+y18h1DAAZUOYPBF5EAPGjZKgDOW2XbZHP8Rw3oSDTpIT1A==}
+    dependencies:
+      '@nuxt/kit': 3.10.3
+      google-fonts-helper: 3.4.1
+      pathe: 1.1.2
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+    dev: true
 
   /@nuxtjs/seo@2.0.0-rc.8(@lezer/common@1.2.1)(@nuxt/devtools@1.0.8)(@unhead/shared@1.8.10)(@vue/compiler-core@3.4.21)(h3@1.11.1)(nuxt@3.10.3)(postcss@8.4.35)(unhead@1.8.10)(vite@5.1.4)(vue@3.4.21)(webpack@5.90.3):
     resolution: {integrity: sha512-N0Ke7A5dHkF5oY9F3VAQAPu0gfkYQHdepIPc2g/GFs+lgNB352djvJ9rNSgVDsxWKmP3RJ1iubl8orCcJiIxyA==}
@@ -6149,6 +6163,15 @@ packages:
       - encoding
       - supports-color
     dev: false
+
+  /google-fonts-helper@3.4.1:
+    resolution: {integrity: sha512-unq9c1NF771916DrVR2MTpMJ5iHiMSjMBApErjhWT1FZIE+7x+Qik+w6cYi5jw/KtHELz+tyGAKgQetTU9wrlA==}
+    dependencies:
+      deepmerge: 4.3.1
+      hookable: 5.5.3
+      ofetch: 1.3.3
+      ufo: 1.4.0
+    dev: true
 
   /googleapis-common@7.0.1:
     resolution: {integrity: sha512-mgt5zsd7zj5t5QXvDanjWguMdHAcJmmDrF9RkInCecNsyV7S7YtGqm5v2IWONNID88osb7zmx5FtrAP12JfD0w==}
