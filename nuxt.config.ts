@@ -37,6 +37,10 @@ export default defineNuxtConfig({
     "/": { prerender: true },
   },
 
+  nitro: {
+    preset: 'vercel'
+  },
+
   devtools: { enabled: true },
 
   srcDir: 'src/',
