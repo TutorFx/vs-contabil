@@ -46,7 +46,7 @@ export default defineNuxtConfig({
   modules: [
     'nuxt-site-config',
     'nuxt-speedkit',
-    '@nuxtseo/module',
+    '@nuxtjs/seo',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/eslint-module',
     '@nuxt/image',
