@@ -44,6 +44,10 @@ nuxt-speedkit and @nuxt/image were used to speed up page performance. These tool
 
 Nuxt-icon was used for the icons. This allows for the use of a wide variety of icons easily and efficiently.
 
+#### 🎨 @nuxtjs/google-fonts
+
+This feature adds Google Fonts to the landing page with the better practices to improve the page speed.
+
 ## 🎯 Final considerations
 
 This architecture allows for a clear separation of responsibilities and facilitates the maintenance and expansion of the application in the future. Additionally, the integration with Google Sheets offers a convenient and efficient way to manage user data. And of course, it's `FREE` 💸
