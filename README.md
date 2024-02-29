@@ -1,6 +1,6 @@
 # 📚 Landing Page VS Contábil
 
-![image](https://github.com/TutorFx/vs-contabil/assets/26338224/355a0159-89ad-404c-806d-88f830fd7ab6)
+![image](https://github.com/TutorFx/vs-contabil/assets/26338224/af6d43c5-5df9-424c-afae-542f608f7eb6)
 
 ## 🚀 Intro
 
