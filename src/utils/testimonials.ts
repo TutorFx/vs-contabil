@@ -1,10 +1,10 @@
 export const TESTIMONIAL_CONTENT = defineTestimonialsConfig(() => [
   {
     user: {
-      name: "Anya Tailor Joy",
+      name: "Anelise de Lima Machado",
       role: "CEO",
-      org: "SF Industires",
-      image: "/user/user-female.png",
+      org: "ANNY PAPER LTDA",
+      image: "/testimonial/Anny Paper.jfif",
     },
     comment: {
       message: `A VS Contábil transformou a gestão financeira do meu negócio. 
@@ -14,10 +14,10 @@ export const TESTIMONIAL_CONTENT = defineTestimonialsConfig(() => [
   },
   {
     user: {
-      name: "Sri Alam",
-      role: "CEO",
-      org: "Membagongkan GROUP",
-      image: "/user/user-female.png",
+      name: "Gabriel Serejo Sorrentino",
+      role: "CTO",
+      org: "Agência Nuxa",
+      image: "/testimonial/Agencia Nuxa.jfif",
     },
     comment: {
       message: `Estou muito impressionado com a VS Contábil. Eles não apenas fornecem 
@@ -28,16 +28,17 @@ export const TESTIMONIAL_CONTENT = defineTestimonialsConfig(() => [
   },
   {
     user: {
-      name: "Sri Alam",
-      role: "CEO",
-      org: "Membagongkan GROUP",
-      image: "/user/user-female.png",
+      name: "Hellem Correa",
+      role: "Pessoa Física",
+      org: " ",
+      image: "/testimonial/Hellem Correa.jfif",
     },
     comment: {
-      message: `Estou muito impressionado com a VS Contábil. Eles não apenas fornecem 
-      serviços contábeis, mas também são parceiros estratégicos que ajudam a 
-      impulsionar o crescimento do meu negócio.`,
-      title: "Contabilidade Consultiva: Uma Mudança de Jogo",
+      message: `A equipe me orientou em cada etapa do processo e me ajudou 
+      a evitar erros e pagar menos impostos. Sou muito grata pelo serviço prestado e 
+      recomendo a VS Contábil para qualquer pessoa que precisa de ajuda com a sua 
+      declaração de imposto de renda.`,
+      title: "A solução para gestão financeira.",
     },
   },
 ]);

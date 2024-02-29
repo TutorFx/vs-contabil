@@ -6,7 +6,7 @@
             </div>
             <div>
                 <b>{{ user.name }}</b>
-                <div class="grid grid-flow-col gap-1">
+                <div class="grid grid-flow-col justify-start gap-1">
                     <span>{{ user.role }}</span>
                     <span>{{ user.org }}</span>
                 </div>
