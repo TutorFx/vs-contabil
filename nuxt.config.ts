@@ -82,6 +82,9 @@ export default defineNuxtConfig({
       sheet: process.env.GOOGLE_SHEET_ID,
       sheet_page: "Cadastro", // It will be by default "Page1"
     },
+    public: {
+      phone: '5562994882079'
+    }
   },
 
   eslint: {
