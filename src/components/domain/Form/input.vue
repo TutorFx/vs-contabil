@@ -1,6 +1,7 @@
 <template>
     <div class="relative">
-        <input :id="id" ref="el" v-model="model" :placeholder="placeholder" :type="type" :class="inputc" :title="title"
+        <input
+:id="id" ref="el" v-model="model" :placeholder="placeholder" :type="type" :class="inputc" :title="title"
             :autocomplete="id" v-bind="{ ...attrs }" />
         <label :for="id" :class="labelc">
             {{ label }}
