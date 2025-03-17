@@ -83,7 +83,7 @@ export default defineNuxtConfig({
       sheet_page: "Cadastro", // It will be by default "Page1"
     },
     public: {
-      phone: '5562994882079',
+      phone: '62992393349',
       URL: process.env.NUXT_PUBLIC_SITE_URL ?? "http://localhost:3000/",
     }
   },
